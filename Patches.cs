@@ -1,4 +1,4 @@
-﻿using static DominantGene.Extensions;
+using static DominantGene.Extensions;
 
 namespace DominantGene;
 
@@ -14,8 +14,16 @@ public static class Patches
         public static void Postfix(ref List<GeneDef> __result, Pawn father, Pawn mother)
         {
             InheritGenes inherit = null;
-            if (CanInheritParentDominantGenes(father, ref inherit) & CanInheritParentDominantGenes(mother, ref inherit))
-                return;
+            var random = new System.Random();
+            if (CanInheritParentDominantGenes(father, ref inherit) & CanInheritParentDominantGenes(mother, ref inherit)) 
+            {
+               
+                if (random.Next(0,2) == 0) {
+                    CanInheritParentDominantGenes(mother, ref inherit);
+                } else {
+                    CanInheritParentDominantGenes(father, ref inherit);
+                } 
+            }
             if (inherit is null) return;
             __result.Clear();
             inherit?.Invoke(__result);
@@ -28,8 +36,18 @@ public static class Patches
     {
         dominantParent = null;
         InheritXenotype inherit = null;
+        var random = new System.Random();
         if (CanInheritParentDominantXenotype(mother, ref inherit) & CanInheritParentDominantXenotype(father, ref inherit))
-            return;
+        {
+            if (random.Next(0, 2) == 0)
+            {
+                CanInheritParentDominantXenotype(mother, ref inherit);
+            }
+            else
+            {
+                CanInheritParentDominantXenotype(father, ref inherit);
+            }
+        }
         if (inherit is null) return;
         inherit?.Invoke(ref xenotype);
         __result = true;
