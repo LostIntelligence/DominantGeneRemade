@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Dominant Gene</name>
+	<name>Dominant Gene Remade</name>
 	<description>The germline genes of the person carrying this gene are particularly assertive in expression, and will enforce the xenotype onto the child. If both parrents carry this gene the chosen parent will be random.</description>
 	<author>Luca</author>
-	<packageId>lc.DominantGene</packageId>
+	<packageId>lc.DominantGeneRemade</packageId>
 	<supportedVersions>
 		<li>1.5</li>
 	</supportedVersions>
@@ -23,4 +23,7 @@
 		<li>Ludeon.Rimworld</li>
 		<li>Ludeon.Biotech</li>
 	</loadAfter>
+	<incompatibleWith>
+		<li>Sl4vP0weR.DominantGene</li>
+	</incompatibleWith>
 </ModMetaData>
