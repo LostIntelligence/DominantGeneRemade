@@ -2,7 +2,7 @@
 
 	<!-- Define if undefined -->
 	<PropertyGroup Condition="'$(Configurations)' == ''">
-		<Configurations>1.3_DEBUG;1.3;1.4_DEBUG;1.4</Configurations>
+		<Configurations>1.5</Configurations>
 	</PropertyGroup>
 
 	<ItemGroup Condition="'@(ConfigurationsList)' == ''">
@@ -81,7 +81,7 @@
 	<!-- Setup versions properties -->
 	<PropertyGroup>
 		<v1_3>$(Configuration.StartsWith('1.3'))</v1_3>
-		<v1_4>$(Configuration.StartsWith('1.4'))</v1_4>
+		<v1_5>$(Configuration.StartsWith('1.5'))</v1_5>
 	</PropertyGroup>
 
 	<!-- Configure for versions -->
@@ -89,21 +89,17 @@
 	<!-- !CHANGE TO YOUR LOCATIONS! -->
 	<Choose>
 		<When Condition="'$(RefGameDir)' == ''">
-			<PropertyGroup>
-				<RefGameDir>D:\Steam\steamapps\common\RimWorld 1.3\</RefGameDir>
-			</PropertyGroup>
-			<PropertyGroup Condition="$(v1_4)">
-				<RefGameDir>D:\Steam\steamapps\common\RimWorld\</RefGameDir>
+
+			<PropertyGroup Condition="$(v1_5)">
+				<RefGameDir>F:\SteamLibrary\steamapps\common\RimWorld\</RefGameDir>
 			</PropertyGroup>
 		</When>
 	</Choose>
 
-	<PropertyGroup Condition="$(v1_3)">
-		<DefineConstants>$(DefineConstants);v1_3</DefineConstants>
-	</PropertyGroup>
 
-	<PropertyGroup Condition="$(v1_4)">
-		<DefineConstants>$(DefineConstants);v1_4</DefineConstants>
+
+	<PropertyGroup Condition="$(v1_5)">
+		<DefineConstants>$(DefineConstants);v1_5</DefineConstants>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="$(Configuration.EndsWith('DEBUG'))">
@@ -145,7 +141,7 @@
 
 	<!-- !CHANGE TO YOUR LOCATIONS! -->
 	<PropertyGroup Condition="'$(GameDir)' == ''">
-		<GameDir>D:\Steam\steamapps\common\RimWorld\</GameDir>
+		<GameDir>F:\SteamLibrary\steamapps\common\RimWorld\</GameDir>
 	</PropertyGroup>
 	
 	<PropertyGroup Condition="'$(ModName)' == ''">
@@ -224,8 +220,8 @@
 			<ItemGroup>
 				<PackageReference Include="Krafs.Rimworld.Ref" Version="1.3.*-*" ExcludeAssets="runtime" />
 			</ItemGroup>
-			<ItemGroup Condition="$(v1_4)">
-				<PackageReference Update="Krafs.Rimworld.Ref" Version="1.4.*-*" />
+			<ItemGroup Condition="$(v1_5)">
+				<PackageReference Update="Krafs.Rimworld.Ref" Version="1.5.*-*" />
 			</ItemGroup>
 		</Otherwise>
 	</Choose>
