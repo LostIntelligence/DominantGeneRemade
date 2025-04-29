@@ -5,11 +5,13 @@ namespace DominantGene;
 [StaticConstructorOnStartup, Harmony]
 public static class Patches
 {
+    private static int parentID;
     static Patches() { Mod.TryPerformPatches(); }
 
     [HarmonyPatch]
     public static class GetInheritedGenes
     {
+        
         public static MethodBase TargetMethod() => typeof(PregnancyUtility).GetMethods().Where(x => x.Name == nameof(GetInheritedGenes)).MaxBy(x => x.GetParameters().Length);
         public static void Postfix(ref List<GeneDef> __result, Pawn father, Pawn mother)
         {
@@ -17,8 +19,14 @@ public static class Patches
             var random = new System.Random();
             if (CanInheritParentDominantGenes(father, ref inherit) & CanInheritParentDominantGenes(mother, ref inherit)) 
             {
+                __result.Clear();
+                inherit = null;
+                int cid;
+                cid = random.Next(0, 2);
+                Log.Message("GENE varID: "+cid);
+               parentID = cid;
                
-                if (random.Next(0,2) == 0) {
+                if (parentID == 0) {
                     CanInheritParentDominantGenes(mother, ref inherit);
                 } else {
                     CanInheritParentDominantGenes(father, ref inherit);
@@ -36,11 +44,13 @@ public static class Patches
     {
         dominantParent = null;
         InheritXenotype inherit = null;
-        var random = new System.Random();
         if (CanInheritParentDominantXenotype(mother, ref inherit) & CanInheritParentDominantXenotype(father, ref inherit))
         {
-            if (random.Next(0, 2) == 0)
+            inherit = null;
+            Log.Message("XENO varID: " + parentID);
+            if (parentID == 0)
             {
+                
                 CanInheritParentDominantXenotype(mother, ref inherit);
             }
             else

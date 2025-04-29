@@ -8,7 +8,7 @@
 	<Import Project="$(ModSharedProps)" />
 	
 	<ItemGroup>
-		<PackageReference Include="Lib.Harmony" Version="2.2.2" ExcludeAssets="runtime" />
+		<PackageReference Include="Lib.Harmony" Version="2.3.6" ExcludeAssets="runtime" />
 	</ItemGroup>
 
 	<ItemGroup>
