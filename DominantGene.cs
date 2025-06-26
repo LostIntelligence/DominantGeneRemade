@@ -1,8 +1,10 @@
-﻿namespace DominantGene;
-
-public class DominantGene : Gene
+﻿using Verse;
+namespace DominantGene
 {
-    public DominantGene()
+    public class DominantGene : Gene
     {
+        public DominantGene()
+        {
+        }
     }
 }

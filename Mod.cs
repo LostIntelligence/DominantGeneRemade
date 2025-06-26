@@ -1,28 +1,40 @@
-global using Mod = DominantGene.Mod;
+using Mod = DominantGene.Mod;
+using HarmonyLib;
+using System;
+using Verse;
 
-namespace DominantGene;
 
-public sealed class Mod : Verse.Mod
+
+
+
+
+
+
+namespace DominantGene
 {
-    public static Mod Instance { get; private set; }
-    public static readonly Harmony Harmony = new(nameof(DominantGene));
-    public static bool Patched { get; private set; }
-    public Mod(ModContentPack content) : base(content)
+
+    public sealed class Mod : Verse.Mod
     {
-#if DEBUG
-        Harmony.DEBUG = true;
-#endif
-        Instance = this;
-    }
-    public static void TryPerformPatches()
-    {
-        if (Patched) return;
-        try
+        public static Mod Instance { get; private set; }
+        public static readonly Harmony Harmony = new(nameof(DominantGene));
+        public static bool Patched { get; private set; }
+        public Mod(ModContentPack content) : base(content)
         {
-            Harmony.PatchAll();
-            Patched = true;
-            Log.Message($"{nameof(DominantGene)} patched successfully...");
+#if DEBUG
+            Harmony.DEBUG = true;
+#endif
+            Instance = this;
         }
-        catch (Exception ex) { Log.Error(ex + ""); }
+        public static void TryPerformPatches()
+        {
+            if (Patched) return;
+            try
+            {
+                Harmony.PatchAll();
+                Patched = true;
+                Log.Message($"{nameof(DominantGene)} patched successfully...");
+            }
+            catch (Exception ex) { Log.Error(ex + ""); }
+        }
     }
 }

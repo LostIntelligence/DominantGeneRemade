@@ -1,0 +1,135 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Luca\\Documents\\TBA Mods\\Source\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F7CA6E64-0F04-4A4F-A6F1-77B90F63D138}|DominantGene.csproj|C:\\Users\\Luca\\Documents\\TBA Mods\\Source\\definitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7CA6E64-0F04-4A4F-A6F1-77B90F63D138}|DominantGene.csproj|solutionrelative:definitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|DominantGene||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7CA6E64-0F04-4A4F-A6F1-77B90F63D138}|DominantGene.csproj|C:\\Users\\Luca\\Documents\\TBA Mods\\Source\\dominantgene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7CA6E64-0F04-4A4F-A6F1-77B90F63D138}|DominantGene.csproj|solutionrelative:dominantgene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7CA6E64-0F04-4A4F-A6F1-77B90F63D138}|DominantGene.csproj|C:\\Users\\Luca\\Documents\\TBA Mods\\Source\\dominantgenedef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7CA6E64-0F04-4A4F-A6F1-77B90F63D138}|DominantGene.csproj|solutionrelative:dominantgenedef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7CA6E64-0F04-4A4F-A6F1-77B90F63D138}|DominantGene.csproj|C:\\Users\\Luca\\Documents\\TBA Mods\\Source\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7CA6E64-0F04-4A4F-A6F1-77B90F63D138}|DominantGene.csproj|solutionrelative:extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7CA6E64-0F04-4A4F-A6F1-77B90F63D138}|DominantGene.csproj|C:\\Users\\Luca\\Documents\\TBA Mods\\Source\\Mod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7CA6E64-0F04-4A4F-A6F1-77B90F63D138}|DominantGene.csproj|solutionrelative:Mod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7CA6E64-0F04-4A4F-A6F1-77B90F63D138}|DominantGene.csproj|C:\\Users\\Luca\\Documents\\TBA Mods\\Source\\Patches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7CA6E64-0F04-4A4F-A6F1-77B90F63D138}|DominantGene.csproj|solutionrelative:Patches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7CA6E64-0F04-4A4F-A6F1-77B90F63D138}|DominantGene.csproj|c:\\users\\luca\\documents\\tba mods\\source\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DominantGene",
+              "DocumentMoniker": "C:\\Users\\Luca\\Documents\\TBA Mods\\Source\\DominantGene.csproj",
+              "RelativeDocumentMoniker": "DominantGene.csproj",
+              "ToolTip": "C:\\Users\\Luca\\Documents\\TBA Mods\\Source\\DominantGene.csproj",
+              "RelativeToolTip": "DominantGene.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-26T21:18:47.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DominantGene.cs",
+              "DocumentMoniker": "C:\\Users\\Luca\\Documents\\TBA Mods\\Source\\DominantGene.cs",
+              "RelativeDocumentMoniker": "DominantGene.cs",
+              "ToolTip": "C:\\Users\\Luca\\Documents\\TBA Mods\\Source\\DominantGene.cs",
+              "RelativeToolTip": "DominantGene.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T20:27:13.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Definitions.cs",
+              "DocumentMoniker": "C:\\Users\\Luca\\Documents\\TBA Mods\\Source\\Definitions.cs",
+              "RelativeDocumentMoniker": "Definitions.cs",
+              "ToolTip": "C:\\Users\\Luca\\Documents\\TBA Mods\\Source\\Definitions.cs",
+              "RelativeToolTip": "Definitions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T20:26:46.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DominantGeneDef.cs",
+              "DocumentMoniker": "C:\\Users\\Luca\\Documents\\TBA Mods\\Source\\DominantGeneDef.cs",
+              "RelativeDocumentMoniker": "DominantGeneDef.cs",
+              "ToolTip": "C:\\Users\\Luca\\Documents\\TBA Mods\\Source\\DominantGeneDef.cs",
+              "RelativeToolTip": "DominantGeneDef.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T20:20:59.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Extensions.cs",
+              "DocumentMoniker": "C:\\Users\\Luca\\Documents\\TBA Mods\\Source\\Extensions.cs",
+              "RelativeDocumentMoniker": "Extensions.cs",
+              "ToolTip": "C:\\Users\\Luca\\Documents\\TBA Mods\\Source\\Extensions.cs",
+              "RelativeToolTip": "Extensions.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAgwAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T20:19:36.103Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Mod.cs",
+              "DocumentMoniker": "C:\\Users\\Luca\\Documents\\TBA Mods\\Source\\Mod.cs",
+              "RelativeDocumentMoniker": "Mod.cs",
+              "ToolTip": "C:\\Users\\Luca\\Documents\\TBA Mods\\Source\\Mod.cs",
+              "RelativeToolTip": "Mod.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T19:46:08.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Patches.cs",
+              "DocumentMoniker": "C:\\Users\\Luca\\Documents\\TBA Mods\\Source\\Patches.cs",
+              "RelativeDocumentMoniker": "Patches.cs",
+              "ToolTip": "C:\\Users\\Luca\\Documents\\TBA Mods\\Source\\Patches.cs",
+              "RelativeToolTip": "Patches.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAUAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T19:08:03.249Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

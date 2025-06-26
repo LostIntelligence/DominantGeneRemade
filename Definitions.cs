@@ -1,6 +1,6 @@
-﻿global using Defs = DominantGene.Definitions;
-
+﻿using RimWorld;
 namespace DominantGene;
 
-[DefOf]
-public static partial class Definitions { }
+
+    [DefOf]
+    public static partial class Definitions { }

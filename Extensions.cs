@@ -1,5 +1,12 @@
-﻿namespace DominantGene;
-
+﻿using RimWorld;
+using HarmonyLib;
+using System;
+using System.Linq;
+using System.Reflection;
+using Verse;
+using System.Collections.Generic;
+using Defs = DominantGene.Definitions;
+namespace DominantGene { 
 public static partial class Extensions
 {
     public static List<Gene> GetEndogenes(this Pawn pawn) => GetGenes(pawn, p => p?.genes?.Endogenes);
@@ -40,4 +47,4 @@ public static partial class Extensions
         return result;
     }
     internal static Pawn dominantParent;
-}
+}}
